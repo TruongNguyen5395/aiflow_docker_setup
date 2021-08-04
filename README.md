@@ -19,3 +19,9 @@ docker-compose up airflow-init
 ```
 docker-compose up
 ```
+
+## Interact with API
+```
+# Example list all dags
+curl -X GET --user "airflow:airflow" "http://localhost:8080/api/v1/dags"
+```
