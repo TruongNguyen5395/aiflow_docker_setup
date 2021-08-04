@@ -1,4 +1,4 @@
-/dags
-/logs
-/plugins
+dags/
+logs/
+plugins/
 .env
