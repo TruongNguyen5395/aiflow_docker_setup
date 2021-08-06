@@ -2,7 +2,7 @@
 
 ## Create folders for storing logs, dags and plugins
 ```
-mkdir .dags/ .logs/ .plugins/
+mkdir .airflow-data/dags/ .airflow-data/logs/ .airflow-data/plugins/
 ```
 
 ## Create variables file
