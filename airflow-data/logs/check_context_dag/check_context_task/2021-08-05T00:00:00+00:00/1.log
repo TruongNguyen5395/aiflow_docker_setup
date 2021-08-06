@@ -1,0 +1,23 @@
+[2021-08-06 07:27:35,884] {taskinstance.py:876} INFO - Dependencies all met for <TaskInstance: check_context_dag.check_context_task 2021-08-05T00:00:00+00:00 [queued]>
+[2021-08-06 07:27:35,897] {taskinstance.py:876} INFO - Dependencies all met for <TaskInstance: check_context_dag.check_context_task 2021-08-05T00:00:00+00:00 [queued]>
+[2021-08-06 07:27:35,898] {taskinstance.py:1067} INFO - 
+--------------------------------------------------------------------------------
+[2021-08-06 07:27:35,898] {taskinstance.py:1068} INFO - Starting attempt 1 of 1
+[2021-08-06 07:27:35,898] {taskinstance.py:1069} INFO - 
+--------------------------------------------------------------------------------
+[2021-08-06 07:27:35,905] {taskinstance.py:1087} INFO - Executing <Task(PythonOperator): check_context_task> on 2021-08-05T00:00:00+00:00
+[2021-08-06 07:27:35,910] {standard_task_runner.py:52} INFO - Started process 1415 to run task
+[2021-08-06 07:27:35,916] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'check_context_dag', 'check_context_task', '2021-08-05T00:00:00+00:00', '--job-id', '4', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/check_context.py', '--cfg-path', '/tmp/tmpgj3b64v0', '--error-file', '/tmp/tmpk5ego_p4']
+[2021-08-06 07:27:35,916] {standard_task_runner.py:77} INFO - Job 4: Subtask check_context_task
+[2021-08-06 07:27:35,958] {logging_mixin.py:104} INFO - Running <TaskInstance: check_context_dag.check_context_task 2021-08-05T00:00:00+00:00 [running]> on host a3e01b137881
+[2021-08-06 07:27:36,030] {taskinstance.py:1280} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=check_context_dag
+AIRFLOW_CTX_TASK_ID=check_context_task
+AIRFLOW_CTX_EXECUTION_DATE=2021-08-05T00:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2021-08-05T00:00:00+00:00
+[2021-08-06 07:27:36,031] {logging_mixin.py:104} INFO - {'conf': <***.configuration.AirflowConfigParser object at 0x7f5949ab4970>, 'dag': <DAG: check_context_dag>, 'dag_run': <DagRun check_context_dag @ 2021-08-05 00:00:00+00:00: scheduled__2021-08-05T00:00:00+00:00, externally triggered: False>, 'ds': '2021-08-05', 'ds_nodash': '20210805', 'execution_date': DateTime(2021, 8, 5, 0, 0, 0, tzinfo=Timezone('+00:00')), 'inlets': [], 'macros': <module '***.macros' from '/home/***/.local/lib/python3.8/site-packages/***/macros/__init__.py'>, 'next_ds': '2021-08-06', 'next_ds_nodash': '20210806', 'next_execution_date': DateTime(2021, 8, 6, 0, 0, 0, tzinfo=Timezone('UTC')), 'outlets': [], 'params': {}, 'prev_ds': '2021-08-04', 'prev_ds_nodash': '20210804', 'prev_execution_date': DateTime(2021, 8, 4, 0, 0, 0, tzinfo=Timezone('UTC')), 'prev_execution_date_success': <Proxy at 0x7f5935038780 with factory <function TaskInstance.get_template_context.<locals>.<lambda> at 0x7f5935143160>>, 'prev_start_date_success': <Proxy at 0x7f5935038cc0 with factory <function TaskInstance.get_template_context.<locals>.<lambda> at 0x7f59350f5ca0>>, 'run_id': 'scheduled__2021-08-05T00:00:00+00:00', 'task': <Task(PythonOperator): check_context_task>, 'task_instance': <TaskInstance: check_context_dag.check_context_task 2021-08-05T00:00:00+00:00 [running]>, 'task_instance_key_str': 'check_context_dag__check_context_task__20210805', 'test_mode': False, 'ti': <TaskInstance: check_context_dag.check_context_task 2021-08-05T00:00:00+00:00 [running]>, 'tomorrow_ds': '2021-08-06', 'tomorrow_ds_nodash': '20210806', 'ts': '2021-08-05T00:00:00+00:00', 'ts_nodash': '20210805T000000', 'ts_nodash_with_tz': '20210805T000000+0000', 'var': {'json': None, 'value': None}, 'yesterday_ds': '2021-08-04', 'yesterday_ds_nodash': '20210804', 'templates_dict': None}
+[2021-08-06 07:27:36,031] {python.py:151} INFO - Done. Returned value was: None
+[2021-08-06 07:27:36,046] {taskinstance.py:1184} INFO - Marking task as SUCCESS. dag_id=check_context_dag, task_id=check_context_task, execution_date=20210805T000000, start_date=20210806T072735, end_date=20210806T072736
+[2021-08-06 07:27:36,078] {taskinstance.py:1245} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2021-08-06 07:27:36,087] {local_task_job.py:151} INFO - Task exited with return code 0
