@@ -1,0 +1,2 @@
+airflow-provider-great-expectations==0.0.7
+apache-airflow-providers-postgres==2.0.0
