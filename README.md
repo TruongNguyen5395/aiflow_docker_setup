@@ -17,6 +17,10 @@ The file automatically load by the docker-compose.
 ```
 echo -e "AIRFLOW_UID=$(id -u)\nAIRFLOW_GID=0" > .env
 ```
+## Building Docker images
+```
+docker build -t airflow-custom-image .
+```
 
 ## Run Airflow services
 ```
