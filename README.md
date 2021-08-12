@@ -22,6 +22,15 @@ echo -e "AIRFLOW_UID=$(id -u)\nAIRFLOW_GID=0" > .env
 docker build -t airflow-custom-image .
 ```
 
+Change the image on docker-compose.yaml
+
+```
+# For official image
+image: ${AIRFLOW_IMAGE_NAME:-apache/airflow:2.1.2}
+
+# For custom image that already install requirement packages and providers
+image: airflow-custom-image:latest
+```
 ## Run Airflow services
 ```
 # For airflow instance
