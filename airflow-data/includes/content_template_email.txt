@@ -1,2 +1,0 @@
-Try {{try_number}} out of {{max_tries + 1}}
-Execution date: {{ti.execution_date}}
