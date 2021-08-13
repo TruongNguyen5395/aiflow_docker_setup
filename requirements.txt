@@ -1,2 +1,19 @@
+# For Airflow's Provider
 airflow-provider-great-expectations==0.0.7
 apache-airflow-providers-postgres==2.0.0
+apache-airflow-providers-mongo==2.0.0
+apache-airflow-providers-elasticsearch==2.0.2
+apache-airflow-providers-neo4j==2.0.0
+apache-airflow-providers-apache-beam==3.0.0
+apache-airflow-providers-ssh==2.1.0
+apache-airflow-providers-docker==2.1.0
+# For Python packages
+pandas
+numpy
+pymongo
+jupyter
+tensorflow==2.4.1
+ludwig==0.3.3
+petastorm
+dvc
+apache-beam
