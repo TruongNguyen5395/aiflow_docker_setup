@@ -1,2 +1,4 @@
-pandas
-numpy
+pymongo
+jupyter
+dvc
+apache-beam
