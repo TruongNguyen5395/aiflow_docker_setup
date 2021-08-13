@@ -6,7 +6,7 @@
 mkdir ./dags ./logs ./plugins ./includes
 
 # Provide airflow have permission for writeing files
-sudo chmod -R dags logs plugins inludes
+sudo chmod -R 777 dags logs plugins includes
 ```
 
 ## Create environment variables file 
