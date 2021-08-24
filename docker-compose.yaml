@@ -59,7 +59,7 @@ x-airflow-common:
     _PIP_ADDITIONAL_REQUIREMENTS: ${_PIP_ADDITIONAL_REQUIREMENTS:-}
     AIRFLOW__CORE__ENABLE_XCOM_PICKLING: 'true'
   volumes:
-    - ./dags:/opt/airflow/dags
+    - ./ex-dag:/opt/airflow/ex-dag
     - ./logs:/opt/airflow/logs
     - ./plugins:/opt/airflow/plugins
     - ./includes:/opt/airflow/includes

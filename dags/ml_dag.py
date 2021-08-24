@@ -11,7 +11,7 @@ default_args = {
 
 
 def _check_holidays(ds):
-    with open('dags/files/day_off.yml', 'r') as f:
+    with open('ex-dag/files/day_off.yml', 'r') as f:
         day_off = set(yaml.load(f, Loader=yaml.FullLoader))
         if ds not in day_off:
             return 'process'
