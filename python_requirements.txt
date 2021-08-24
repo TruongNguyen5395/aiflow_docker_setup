@@ -1,4 +1,11 @@
+pandas
+numpy
 pymongo
 jupyter
 dvc
-apache-beam
+dvc[s3]
+airflow-dvc
+dbt
+airflow-dbt
+plotly
+tfx

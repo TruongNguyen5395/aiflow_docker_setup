@@ -57,12 +57,14 @@ x-airflow-common:
     AIRFLOW__CORE__LOAD_EXAMPLES: 'false'
     AIRFLOW__API__AUTH_BACKEND: 'airflow.api.auth.backend.basic_auth'
     _PIP_ADDITIONAL_REQUIREMENTS: ${_PIP_ADDITIONAL_REQUIREMENTS:-}
+    AIRFLOW__CORE__ENABLE_XCOM_PICKLING: 'true'
   volumes:
     - ./dags:/opt/airflow/dags
     - ./logs:/opt/airflow/logs
     - ./plugins:/opt/airflow/plugins
     - ./includes:/opt/airflow/includes
     - ./airflow.cfg:/opt/airflow/airflow.cfg
+    - "/var/run/docker.sock:/var/run/docker.sock"
   user: "${AIRFLOW_UID:-50000}:${AIRFLOW_GID:-50000}"
   depends_on:
     redis:
@@ -110,7 +112,7 @@ services:
       retries: 5
     restart: always
 
-  airflow-scheduler:
+  airflow-scheduer:
     <<: *airflow-common
     command: scheduler
     healthcheck:
